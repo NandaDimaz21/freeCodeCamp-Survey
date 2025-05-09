@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <label id="name-label" for="nama">Nama <input class="form-ctrl" id="name" type="text" name="nama" placeholder="Masukkan nama anda" required /></label>
+        <label id="email-label"  for="email">Email <input class="form-ctrl" id="email" type="email" name="email" placeholder="Masukkan email anda" required /></label>
+        <label id="number-label" for="umur">Umur (optional) <input  class="form-ctrl" id="number" type="number" name="umur" placeholder="Umur" min="15" max="120" /></label>
+        <label id="dropdown-label" for="pekerjaan">Pekerjaan
+        <select  class="form-ctrl" id="dropdown" name="pekerjaan">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Murid</option>
+            <option value="2">Mahasiswa</option>
+            <option value="3">Pekerja Penuh</option>
+            <option value="4">Pekerja Freelance</option>
+            <option value="5">Lainnya</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Apakah anda akan merekomendasikan freeCodeCamp pada teman/keluarga?</legend>
+          <label for="rekomen"><input value="pasti-rekom" class="inline" type="radio" name="rekomen" checked /> Pasti</label>
+          <label for="rekomen"><input value="mungkin-rekom" class="inline" type="radio" name="rekomen" /> Mungkin</label>
+          <label for="rekomen"><input value="tidak_tahu-rekom" class="inline" type="radio" name="rekomen" /> Tidak tahu</label>
+        </fieldset>
+        <fieldset>
+          <legend>Apa saja yang menurut Anda perlu ditingkatkan? (Pilih yang sesuai)</legend>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="front-end" /> Proyek Front-end</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="back-end" /> Proyek Back-end</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="visualisasi-data" /> Visualisasi Data</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="tantangan" /> Tantangan</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="kumonitas" /> Komunitas Open Sources</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="bantuan" /> Gitter help rooms</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="video" /> Video</label>
+          <labe for="improve"l><input class="inline" name="improve" type="checkbox" value="meetups" /> City Meetups</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="wiki" /> Wiki</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="forum" /> Forum</label>
+          <label for="improve"><input class="inline" name="improve" type="checkbox" value="kursus-lain" /> Kursus Tambahan</label>
+        </fieldset>
+        <fieldset>
+          <label>Apakah ada pesan atau saran?<textarea class="form-ctrl" placeholder="Masukkan pesan anda disini..."></textarea></label>
+        </fieldset>
+        <button id="submit" class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
